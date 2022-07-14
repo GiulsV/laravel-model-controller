@@ -11,11 +11,11 @@
                 
     @foreach($movies as $movie)
     <article>
-        <p>{{ $movie['title'] }}</p> 
-        <p>{{ $movie['original_title'] }}</p>
-        <p>{{ $movie['nationality'] }}</p>
-        <p>{{ $movie['date'] }}</p>
-        <p>{{ $movie['vote'] }}</p>
+        <p>Titolo: {{ $movie['title'] }}</p> 
+        <p>Titolo originale: {{ $movie['original_title'] }}</p>
+        <p>Nazionalità: {{ $movie['nationality'] }}</p>
+        <p>Anno: {{ $movie['date'] }}</p>
+        <p>Voto: {{ $movie['vote'] }}</p>
     </article>
     @endforeach
 
