@@ -6,16 +6,8 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function index(){
-        $data = [
-            'pageName' => 'Homepage',
-            'pageTitle' => 'Test'
-        ];
-
-        return view('home', $data);
-    }
-
-    public function movies(){
-        return view('movies');
+    public function index() {
+        $movies =\App\Movie::all();
+        return view('home', compact('movies'));
     }
 }
